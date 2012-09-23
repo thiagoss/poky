@@ -1,5 +1,3 @@
-LIBV = "0.10"
-
 python populate_packages_prepend () {
     gst_libdir = d.expand('${libdir}/gstreamer-${LIBV}')
     postinst = d.getVar('plugin_postinst', True)

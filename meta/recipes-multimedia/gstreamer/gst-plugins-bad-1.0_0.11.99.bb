@@ -8,7 +8,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=73a5855a8119deb017f5f13cf327095d \
 
 DEPENDS += "gst-plugins-base-1.0 libmusicbrainz tremor librsvg curl"
 
-PR = "r0"
+PR = "r1"
 
 SRC_URI = "http://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-${PV}.tar.xz"
 S = "${WORKDIR}/gst-plugins-bad-${PV}"
@@ -28,3 +28,5 @@ do_configure_prepend() {
 
 SRC_URI[md5sum] = "f5a3e3f579e161e70c6207354a728a49"
 SRC_URI[sha256sum] = "d2f7ffa02bf63163f1909539cd6efee786da107a2b4358f09b7475be995efcf8"
+
+FILES_${PN} += "${PLUGINS_DIR}/*.so"

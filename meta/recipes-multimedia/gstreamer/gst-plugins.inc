@@ -4,6 +4,8 @@ BUGTRACKER = "https://bugzilla.gnome.org/enter_bug.cgi?product=Gstreamer"
 SECTION = "multimedia"
 DEPENDS = "gstreamer"
 
+LIBV ?= "0.10"
+
 inherit autotools pkgconfig
 
 FILESPATH =. "${FILE_DIRNAME}/gst-plugins:"

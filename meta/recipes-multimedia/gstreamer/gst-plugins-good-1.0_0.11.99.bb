@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=a6f89e2100d9b6cdffcea4f398e37343 \
 
 DEPENDS += "gst-plugins-base-1.0 gconf cairo jpeg libpng zlib libid3tag flac \
 	    speex libsoup-2.4 pulseaudio"
-PR = "r0"
+PR = "r1"
 
 SRC_URI = "http://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-${PV}.tar.xz"
 S = "${WORKDIR}/gst-plugins-good-${PV}"
@@ -26,3 +26,4 @@ SRC_URI[md5sum] = "762bd204e361a70aa3f262ee8e457519"
 SRC_URI[sha256sum] = "760250b3aecbd1da211082dda0e902cae2e460d07e0f1d2952740bf613b18465"
 
 FILES_${PN}-gconfelements += "${sysconfdir}/gconf/schemas/gstreamer-1.0.schemas"
+FILES_${PN} += "${PLUGINS_DIR}/*.so"

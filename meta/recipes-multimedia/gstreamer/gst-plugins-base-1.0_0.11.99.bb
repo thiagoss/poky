@@ -14,7 +14,7 @@ S = "${WORKDIR}/gst-plugins-base-${PV}"
 SRC_URI[md5sum] = "0419f3e3ccdc33e2cbebb26255ead2cf"
 SRC_URI[sha256sum] = "b0317b1e33a22fe4daf911c4996c194690fc207e5044f38de570b1cd202cab7e"
 
-PR = "r0"
+PR = "r1"
 
 inherit gettext
 
@@ -25,4 +25,4 @@ do_configure_prepend() {
 	rm -f ${S}/m4/lib-link.m4
 }
 
-FILES_${PN} += "${datadir}/${BPN}"
+FILES_${PN} += "${PLUGINS_DIR}/*.so"
