@@ -11,8 +11,8 @@ DEPENDS += "alsa-lib freetype liboil libogg libvorbis libtheora util-linux tremo
 SRC_URI = "http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-${PV}.tar.xz"
 S = "${WORKDIR}/gst-plugins-base-${PV}"
 
-SRC_URI[md5sum] = "0419f3e3ccdc33e2cbebb26255ead2cf"
-SRC_URI[sha256sum] = "b0317b1e33a22fe4daf911c4996c194690fc207e5044f38de570b1cd202cab7e"
+SRC_URI[md5sum] = "428f5a0beaa7f76262bea0f431f8337e"
+SRC_URI[sha256sum] = "4b98a74712e31d5426dd1cf2de883b6af59fd37997b0ffaed53914eb6df45053"
 
 PR = "r1"
 

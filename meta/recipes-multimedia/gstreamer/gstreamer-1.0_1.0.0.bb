@@ -14,8 +14,8 @@ PR = "r1"
 SRC_URI = "http://gstreamer.freedesktop.org/src/gstreamer/gstreamer-${PV}.tar.xz"
 S = "${WORKDIR}/gstreamer-${PV}"
 
-SRC_URI[md5sum] = "5388d6ff684c314bdfcfe25e550812e4"
-SRC_URI[sha256sum] = "a4b1c2fd2ff8762688c1f0f819001d98fd3924618c861cf96995ecfb343895ff"
+SRC_URI[md5sum] = "b7c9252b83720115d0897fbbbc092dc8"
+SRC_URI[sha256sum] = "d0f9887ff1c81a33220add2e6d3eb84d869c485c83523a8da0ce1f0cb2463f58"
 
 inherit autotools pkgconfig gettext
 

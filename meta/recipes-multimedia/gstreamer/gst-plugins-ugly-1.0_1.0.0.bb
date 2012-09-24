@@ -21,7 +21,7 @@ do_configure_prepend() {
 	rm ${S}/m4/lib-link.m4 || true
 }
 
-SRC_URI[md5sum] = "fc20da880285a9a746736028393daaed"
-SRC_URI[sha256sum] = "1b9909278a4d22a22f01fd9326737ea3169c7af0bb3f0971e3ddb7c1a7aa829d"
+SRC_URI[md5sum] = "7f20303caf4305278573fb7ef73a07b7"
+SRC_URI[sha256sum] = "d0d21777d16afae3064e0d660cbe46eaabf889fa7f60b065ead8b3d1108a905d"
 
 FILES_${PN} += "${PLUGINS_DIR}/*.so"

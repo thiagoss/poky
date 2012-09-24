@@ -22,8 +22,8 @@ do_configure_prepend() {
 	rm ${S}/m4/lib-link.m4 || true
 }
 
-SRC_URI[md5sum] = "762bd204e361a70aa3f262ee8e457519"
-SRC_URI[sha256sum] = "760250b3aecbd1da211082dda0e902cae2e460d07e0f1d2952740bf613b18465"
+SRC_URI[md5sum] = "f711832cd8a9b033eb424fabe89ca9d1"
+SRC_URI[sha256sum] = "f4684edb098d0d60b4a3d5a1fce846a4ba351f80adac4ba6e8199bd059f87886"
 
 FILES_${PN}-gconfelements += "${sysconfdir}/gconf/schemas/gstreamer-1.0.schemas"
 FILES_${PN} += "${PLUGINS_DIR}/*.so"
